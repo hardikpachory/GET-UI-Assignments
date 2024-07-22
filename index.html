@@ -1,160 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>MetaPark - Parking System for Metacube</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>MetaPark - Parking System for Metacube</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+        </head>
 
-    <body>
-        <nav id="navbar">
-            <a href="#navbar">
-                <img src="./assets/images/logo.png" width="10%"/>
-            </a>
-            <ul>
-                <li><a href="#employee">Add Employee</a></li>
-                <li><a href="#vehicle">Add Vehicle</a></li>
-                <li><a href="#feedback">Give Feedback</a></li>
-                <li><a href="#">Pricing</a></li>
-            </ul>
-        </nav>
-        <!-- Header Section or the Landing page -->
-        <header>
-            <div>
-                <h3>Welcome to Metacube Parking System</h3>
-                <h1>METAPARK</h1>
-            </div>
-            <div>
-                <img src="./assets/images/header_image.svg" width="40%" />
-            </div>
-        </header>
-
-        <!-- Add Employee Section -->
-         <main id="employee">
-            <h1>Add Employee</h1>
-            <form>
-                <label>
-                    Full Name  <input type="text" name=”name”  />
-                </label>
-                <br>
-                <label>
-                    Gender     <span> <input type="radio" name="gender" value="Male" /> Male </span> 
-                               <span> <input type="radio" name="gender" value="Female"/> Female </span>
-                </label>
-                <br>
-                <label>
-                    Email   <input type="email" name="email" />
-                </label>
-                <br>
-                <label>
-                    Password   <input type="password" name="password" />
-                </label>
-                <br>
-                <label>
-                    Confirm Password   <input type="password" name="confirm_password" />
-                </label>
-                <br>
-                <label>
-                    Mobile Number   <input type="text" name="mobile_no" />
-                </label>
-                <br>
-                <input type="submit"/>
-            </form>
-         </main>
-
-         <!-- Add Vehicle Section -->
-         <main id="vehicle">
-            <h1>Add Vehicle</h1>
-            <form>
-                <label>
-                    Vehicle Make   <input type="text" name="vehiclemake" />
-                </label>
-                <br>
-                <label>
-                    Vehicle Model   <input type="text" name="vehiclemodel" />
-                </label>
-                <br>
-                <label>
-                    Type   
-                    <select name="type">
-                        <option value="None">Select Value</option>
-                        <option value="cycle">Cycle</option>
-                        <option value="motorCycle">Motor Cycle</option>
-                        <option value="fourWheeler">Four Wheeler</option>
-                    </select>
-                </label>
-                <br>
-                <label>
-                    Vehicle Number   <input type="text" name="vehiclenumber" />
-                </label>
-                <br>
-                <label>
-                    Employee ID   <input type="text" name="employeeid" />
-                </label>
-                <br>
-                <label>
-                    Identification   <input type="textarea" name="identification" />
-                </label>
-                <br>
-                <input type="submit" />
-            </form>
-         </main>
-
-         <!-- Feedback Section -->
-         <main id="feedback">
-            <h1>Get In Touch</h1>
-            <form>
-                <input type="text" name="feedbackname" placeholder="Your Name"/>
-                <br>
-                <input type="email" name="feedbackemail" placeholder="Email Address"/>
-                <br>
-                <input type="text" name="feedbacksubject" placeholder="Subject"/>
-                <br>
-                <input type="textare" name="feedbackdata" placeholder="Message"/>
-                <br>
-                <input type="submit" value="Send Email!"/>
-            </form>
-         </main>
-
-         <main id="pricing">
-            <h1>Pricing</h1>
-            <div> <!-- Outer Box Containing all three pricing -->
-                <div> <!-- Cycle Box -->
-                    <h3>Cycle</h3>
-                    <div> <!-- Cicular Container -->
-                        <h2>$100</h2>
-                        <p>/month</p>
-                    </div>
-                    <p>$5 Daily</p>
-                    <p>$100 Monthly</p>
-                    <p>$500 Yearly</p>
-                    <input type="button" value="PURCHASE NOW"/>
+        <body>
+            <nav id="navbar">
+                    <a href="#">
+                        <img class="logoimg" src="./assets/images/logo-dark.png"/>
+                    </a>
+                    <ul>
+                        <li class="nav-item"><a href="#employee">Add Employee</a></li>
+                        <li class="nav-item"><a href="#vehicle">Add Vehicle</a></li>
+                        <li class="nav-item"><a href="#feedback">Give Feedback</a></li>
+                        <li class="nav-item"><a href="#pricing">Pricing</a></li>
+                    </ul>
+            </nav>
+            <!-- Header Section or the Landing page -->
+            <header class="header">
+                <div class="header-text">
+                    <div class="hashtag">#metaparkforall</div>
+                    <h3 class="pretext">Welcome to the</h3>
+                    <h3 class="metapark">METAPARK</h3>
+                    <h3 class="tagline">By the metacube, for the metacube.</h3>
+                    <button class="register" ><a href="#vehicle">Register Now!</a></button>
                 </div>
-
-                <div> <!-- Two Wheeler Box -->
-                    <h3>Motor Cycle</h3>
-                    <div> <!-- Cicular Container -->
-                        <h2>$200</h2>
-                        <p>/month</p>
-                    </div>
-                    <p>$10 Daily</p>
-                    <p>$200 Monthly</p>
-                    <p>$1000 Yearly</p>
-                    <input type="button" value="PURCHASE NOW"/>
+                <div class="header-img">
+                    <img src="./assets/images/header-image.png" width="40%" />
                 </div>
+            </header>
 
-                <div> <!-- Four Wheeler Box -->
-                    <h3>Four Wheeler</h3>
-                    <div> <!-- Cicular Container -->
-                        <h2>$500</h2>
-                        <p>/month</p>
-                    </div>
-                    <p>$20 Daily</p>
-                    <p>$500 Monthly</p>
-                    <p>$3500 Yearly</p>
-                    <input type="button" value="PURCHASE NOW"/>
+            <!-- Add Employee Section -->
+            <div class="collapsible-form sections" id="employee">
+                <input type="checkbox" id="collapsible-toggle"  class="collapsible-toggle">
+                <label for="collapsible-toggle" class="collapsible-button">Add Employee</label>
+                
+                <div class="collapsible-content forms" >
+                    <form>
+                        <label>Full Name  <input type="text" name=”name”  /></label>
+                    <br>
+                    <label>Gender     <span> <input type="radio" name="gender" value="Male" /> Male </span> 
+                                    <span> <input type="radio" name="gender" value="Female"/> Female </span>
+                    </label>
+                    <br>
+                    <label>Email   <input type="email" name="email" /></label>
+                    <br>
+                    <label>Password   <input type="password" name="password" /></label>
+                    <br>
+                    <label>Confirm Password   <input type="password" name="confirm_password" /></label>
+                    <br>
+                    <label>Mobile Number   <input type="text" name="mobile_no" /></label>
+                    <br>
+                    <input class="submit" type="submit"/>
+                </form>
                 </div>
             </div>
-         </main>
-    </body>
-</html>
+
+            <!-- Add Vehicle Section -->
+            <div class="collapsible-form sections" id="vehicle">
+                <input type="checkbox" id="collapsible-toggle-1"  class="collapsible-toggle">
+                <label for="collapsible-toggle-1" class="collapsible-button">Add Vehicle</label>
+
+                <div class="collapsible-content forms" >
+                    <form>
+                        <label>
+                            Vehicle Make   <input type="text" name="vehiclemake" />
+                        </label>
+                        <br>
+                        <label>
+                            Vehicle Model   <input type="text" name="vehiclemodel" />
+                        </label>
+                        <br>
+                        <label>
+                            Type   
+                            <select name="type">
+                                <option value="None">Select Value</option>
+                                <option value="cycle">Cycle</option>
+                                <option value="motorCycle">Motor Cycle</option>
+                                <option value="fourWheeler">Four Wheeler</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label>
+                            Vehicle Number   <input type="text" name="vehiclenumber" />
+                        </label>
+                        <br>
+                        <label>
+                            Employee ID   <input type="text" name="employeeid" />
+                        </label>
+                        <br>
+                        <label>
+                            Identification   <input type="textarea" name="identification" />
+                        </label>
+                        <br>
+                        <input class="submit" type="submit" />
+                    </form>
+                </div>
+            </div>
+
+            <!-- Feedback Section -->
+            <div id="feedback">
+                <div class="feedback-image">
+                    <img src="./assets/images/Feedback.png" alt=""/>
+                </div>
+                <div class="feedback-detail">
+                    <span class="feedback-title">Get In Touch</span>
+                    <form>
+                        <input class="feedback-input" type="text" name="feedbackname" placeholder="Your Name"/>
+                        <br>
+                        <input class="feedback-input" type="email" name="feedbackemail" placeholder="Email Address"/>
+                        <br>
+                        <input class="feedback-input" type="text" name="feedbacksubject" placeholder="Subject"/>
+                        <br>
+                        <input class="feedback-input" type="textare" name="feedbackdata" placeholder="Message"/>
+                        <br>
+                        <input class="submit" type="submit" value="Send Email!"/>
+                    </form>
+                </div>
+            </div>
+
+            <div id="pricing">
+                <h2>Pricing</h2>
+                <div> <!-- Outer Box Containing all three pricing -->
+                    <div class="outer-box"> <!-- Cycle Box -->
+                        <h3>Cycle</h3>
+                        <div class="circle-box"> <!-- Cicular Container -->
+                            <h3>$100</h3>
+                            <p>/month</p>
+                        </div>
+                        <p>$5 Daily</p>
+                        <p>$100 Monthly</p>
+                        <p>$500 Yearly</p>
+                        <input class="purchase" type="button" value="PURCHASE NOW"/>
+                    </div>
+
+                    <div class="outer-box"> <!-- Two Wheeler Box -->
+                        <h3>Motor Cycle</h3>
+                        <div class="circle-box"> <!-- Cicular Container -->
+                            <h3>$200</h3>
+                            <p>/month</p>
+                        </div>
+                        <p>$10 Daily</p>
+                        <p>$200 Monthly</p>
+                        <p>$1000 Yearly</p>
+                        <input class="purchase" type="button" value="PURCHASE NOW"/>
+                    </div>
+
+                    <div class="outer-box"> <!-- Four Wheeler Box -->
+                        <h3>Four Wheeler</h3>
+                        <div class="circle-box"> <!-- Cicular Container -->
+                                <h3>$500</h3>
+                                <p>/month</p>
+                        
+                        </div>
+                        <p>$20 Daily</p>
+                        <p>$500 Monthly</p>
+                        <p>$3500 Yearly</p>
+                        <input class="purchase" type="button" value="PURCHASE NOW"/>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>Metacube Software Pvt. Ltd.</p>
+            </footer>
+        </body>
+    </html>
