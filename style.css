@@ -7,6 +7,8 @@ body{
     width: 100%;
     overflow-x: hidden;
     font-family: "Roboto";
+    background: url(images/bodybg.png);
+    background-repeat: repeat;
 }
 .navbar{
     background-color: #6389FC;
@@ -143,6 +145,7 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 4%;
+    position: relative;
 }
 
 .control{
@@ -155,23 +158,141 @@ header{
     font-size: 4em;
     color: #4464c485;
 }
+
+.control i:hover{
+    transform: scale(1.33);
+    transition: scale 1.5s ease-in-out;
+}
+
 .images{
-    width: 63%;
+    width: 70%;
+    display: flex;
+}
+
+.img-trans{
+    position: absolute;
+    z-index: -3;
+}
+
+.left-image{
+    transform: rotateY(40deg);
+    left: 10%;
+    top: 20%;
+    transform: scale(0.66) perspective(950px) rotateY(20deg);
+}
+
+.center-img{
+    position:absolute;
+    transform: scale(0.8);
+    left: 18%;
+}
+
+.right-image{
+    right: 11%;
+    top: 20%;
+    transform: scale(0.66) perspective(950px) rotateY(-20deg);
 }
 
 .screenshots{
-    margin-top: 3%;
+    margin-top: 34%;
 }
 
 .screenshot{
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    position: relative;
 }
 
 .visual{
     display: flex;
     width: 64%;
+}
+
+.circular{
+    border-radius: 50%;
+    height: 20%;
+    width: 5.5%;
+    text-align: center;
+    position: absolute;
+}
+
+.cloudy{
+    background:#fced6e;
+    color: white;
+    left: 37.5%;
+    top: 37%;
+}
+
+.sunny-circle{
+    background-color: #f2a054;
+    color: white;
+    top: 33%;
+    right: 23%;
+}
+
+.rainy-circle{
+    background-color: #b7fbee;
+    color: white;
+    top: 39%;
+    left: 37%;
+}
+
+.temp25{
+    top: 86%;
+    color: white;
+    right: 41.1%;
+    background-color: tomato;
+}
+
+.temp25 p{
+    margin-top: 34%;
+    font-weight: 500;
+    font-size: large;
+}
+
+.temp15{
+    background-color: #6389FC;
+    top: 88%;
+    color: white;
+    left: 18.1%;
+}
+
+.temp9{
+    top: 90%;
+    color: white;
+    left: 18.1%;
+    background-color: #7691c6;
+}
+
+.temp9 p{
+    margin-top: 34%;
+    font-weight: 500;
+    font-size: large;
+}
+
+.temp15 p{
+    margin-top: 34%;
+    font-weight: 500;
+    font-size: large;
+}
+
+.rainy-circle p{
+    margin-top: 34%;
+    font-size: large;
+    font-weight: 500;
+}
+
+.cloudy p{
+    font-size: large;
+    margin-top: 34%;
+    font-weight: 500;
+}
+
+.sunny-circle p{
+    font-size: large;
+    font-weight: 500;
+    margin-top: 33%;
 }
 
 .cloudy-img{
@@ -307,6 +428,8 @@ header{
 .download{
     background-color: #2596be;
     position: relative;
+    background: url(./images/downloadbg.png);
+    background-repeat: repeat;
 }
 
 .download>div{
