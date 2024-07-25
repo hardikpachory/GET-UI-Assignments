@@ -1,0 +1,22 @@
+.blog-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.active{
+    font-weight: 700;
+}
+
+.jumbo{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 3em;
+}
+
+.image{
+    background-color: rgba(0, 0, 0, 0.651);
+    height: 100%;
+}
