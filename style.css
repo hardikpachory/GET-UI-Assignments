@@ -1,0 +1,123 @@
+:root {
+    --greenish-white: #eef2f7;
+    --athens-gray: #f3f4f8;
+    --limed-blue: #313a46;
+    --pale-sky: #6c757d;
+    --cornflower-blue: #727cf5;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--athens-gray);
+  }
+
+
+.bg-matte-black{
+background-color: #313a46;
+}
+.main-menu{
+    /* color:#8391A2; */
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.main-menu i{
+    margin-right: 19%;
+    font-size: 20px;
+}
+
+.sub-menu{
+    text-decoration: none;
+    font-weight: 500;
+    margin: 3% 26%;
+}
+
+.sub-menu a{
+    text-decoration: none;
+}
+
+.main-menu>span{
+    margin-right: 40%;
+}
+
+.sidebar{
+    width: 20%;
+    position: sticky;
+}
+
+.logo{
+    width: 80%;
+}
+  
+  .pointer {
+    cursor: pointer;
+  }
+  .color-pale-sky {
+    color: var(--pale-sky);
+  }
+  
+  .navbar-custom {
+    height: 70px;
+    margin-left: 260px;
+  }
+  
+  .hamburger {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .hamburger > span {
+    width: 45%;
+  }
+  
+  .left-sidebar-opened {
+    height: 100vh;
+    width: 260px;
+    background-color: var(--limed-blue);
+  }
+  
+  #nav-search-form {
+    height: 38px;
+  }
+  #nav-search-icon {
+    font-size: medium;
+    top: 21%;
+    left: 10px;
+  }
+  .search-bg-greenish-white {
+    width: 225px;
+    padding: 0 20px 0 40px;
+    outline: none;
+    background-color: var(--greenish-white);
+  }
+  .bg-cornflower-blue {
+    background-color: var(--cornflower-blue);
+    border: 0;
+    box-shadow: 0 5px 16px -8px var(--cornflower-blue);
+    color: white;
+  }
+  .nav-item-icon {
+    font-size: larger;
+  }
+  .nav-item-icon:hover {
+    color: var(--cornflower-blue);
+  }
+  
+  .profile-section {
+    height: 70px;
+    width: 170px;
+    background-color: #fafafd;
+    border-left: 1px solid var(--greenish-white);
+    border-right: 1px solid var(--greenish-white);
+  }
+  .profile-section > .profile {
+    width: 32px;
+    height: 32px;
+  }
+  .profile-section p {
+    font-size: 12px;
+  }
+  .profile-section p > strong {
+    font-size: 14px;
+  }
