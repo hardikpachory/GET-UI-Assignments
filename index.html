@@ -12,6 +12,7 @@
     <div class="container-fluid">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-matte-black sidebar ">
+              <div class="h-100 w-100 overflow-y-scroll" style="scrollbar-width: none;">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                         <span class="fs-5 d-none m-2 mx-4 d-sm-inline"><img class="logo" src="https://coderthemes.com/hyper_2/saas/assets/images/logo.png" alt="logo"></span>
@@ -195,12 +196,13 @@
                         </ul>
                     </div>
                 </div>
+              </div>
             </div>
-            <div class="col py-3">
+            <div class="col">
                 <!-- Main content area -->
                 <!-- ... -->
                 <div>
-                  <nav class="navbar-custom d-flex justify-content-between align-items-center px-3">
+                  <nav class="navbar-custom navbar-height top-menu d-flex justify-content-between align-items-center px-3">
                     <!-- Search Box -->
                     <div class="d-flex align-items-center mx-3 gap-2">
                       <!-- Hamburger -->
@@ -219,31 +221,124 @@
                     <!-- Language, Nav Items & Profile -->
                     <div class="d-flex gap-4 align-items-center">
                       <!-- Language -->
-                      <div></div>
+                      <div class="d-flex gap-2 align-items-center pointer py-4">          
+                        <img class="flag-size" src="./image/us.jpg" alt="">   
+                        <div class="d-flex align-items-baseline gap-1 nav-item-icon">
+                          <p class="mb-0 fs-6">English</p>
+                          <i class="bi bi-chevron-down" style="font-size: x-small;"></i>
+                        </div>     
+                      </div>
                       <!-- Nav Items -->
                       <i class="bi bi-bell nav-item-icon pointer"></i>
-                      <i class="bi bi-bell nav-item-icon pointer"></i>
-                      <i class="bi bi-bell nav-item-icon pointer"></i>
-                      <i class="bi bi-bell nav-item-icon pointer"></i>
-                      <i class="bi bi-bell nav-item-icon pointer"></i>
+                      <i class="bi bi-command nav-item-icon pointer"></i>
+                      <i class="bi bi-gear nav-item-icon pointer"></i>
+                      <i class="bi bi-moon nav-item-icon pointer"></i>
+                      <i class="bi bi-fullscreen nav-item-icon pointer"></i>
                       <!-- Profile -->
                       <div class="profile-section d-flex align-items-center justify-content-between px-3">
                         <!-- Image -->
                         <div class="col-2 profile rounded-circle overflow-hidden">
-                          <img class="w-100 h-100" src="./image/avatar-1.jpg" alt="">
+                          <img class="w-100 h-100" src="https://coderthemes.com/hyper_2/saas/assets/images/users/avatar-1.jpg" alt="">
                         </div>
                         <!-- Info -->
                         <div class="col-8 d-flex flex-column justify-content-center">
                           <p class="mb-0">
-                            <strong>Vikas Rajput</strong>
+                            <strong>John Doe</strong>
                           </p>
-                          <p class="mb-0">Developer</p>
+                          <p class="mb-0">Trainee</p>
                         </div>
                       </div>
                     </div>
-              
                   </nav>
                 </div>
+
+                <!-- Layouts -->
+                <div class="navbar-custom d-flex flex-column gap-4 px-4 bg-athens-gray">
+                  <!-- Bread crumbs -->
+                  <div class="d-flex justify-content-between align-items-center pt-3 mt-3">
+                    <h5>Projects</h5>
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="pointer breadcrumb-item color-cornflower-blue">Hyper</li>
+                        <li class="pointer breadcrumb-item color-cornflower-blue" aria-current="page">Dashboard</li>
+                        <li class="pointer breadcrumb-item active" aria-current="page">Projects</li>
+                      </ol>
+                    </nav>
+                  </div>
+                  <!-- status section -->
+                  <div class="d-flex bg-white shadow-sm rounded-1" style="height: 154px;">
+                    <span class="border-1 border-end flex-grow-1">Total Projects</span>
+                    <span class="border-1 border-end flex-grow-1"> Total tasks</span>
+                    <span class="border-1 border-end flex-grow-1">Members</span>
+                    <span class="flex-grow-1">Productivity</span>
+                  </div>
+            
+                  <div class="row" style="height: 475px;">
+                    <div class="col-4">
+                      <div class="w-100 h-100 rounded-1 shadow-sm bg-white">
+                        <div class="d-flex justify-content-between p-4">
+                          <div><h5>Project Status</h5></div>
+                          <div><i class="bi bi-three-dots-vertical"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="w-100 h-100 rounded-1 shadow-sm bg-white">
+                        <div class="d-flex justify-content-between p-4">
+                          <div><h5>Tasks</h5></div>
+                          <div><i class="bi bi-three-dots-vertical"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex w-100 rounded-1 shadow-sm bg-white" style="height: 475px;">
+                    <div class="container">
+                      <div class="d-flex flex-row justify-content-between p-3">
+                        <div><h5>Tasks Overview</h5></div>
+                        <div><i class="bi bi-three-dots-vertical"></i></div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="row mb-4" style="height: 475px;">
+                    <div class="col-5">
+                      <div class="w-100 h-100 rounded-1 shadow-sm bg-white">
+                        <div class="d-flex justify-content-between p-3">
+                          <div><h5>Recent Activities</h5></div>
+                          <div><i class="bi bi-three-dots-vertical"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="w-100 h-100 rounded-1 shadow-sm bg-white">
+                        <div class="d-flex justify-content-between p-3">
+                          <div><h5>Your Calendar</h5></div>
+                          <div><i class="bi bi-three-dots-vertical"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Footer -->
+                <footer class="navbar-custom p-4 border-top bg-athens-gray">
+                  <div class="">
+                      <div class="row">
+                          <div class="col-md-6">
+                              2024 © Hyper - Coderthemes.com
+                          </div>
+                          <div class="col-md-6">
+                              <div class="d-flex justify-content-end align-items-center gap-3">
+                                  <a class="text-decoration-none color-pale-sky" href="#">About</a>
+                                  <a class="text-decoration-none color-pale-sky" href="#">Support</a>
+                                  <a class="text-decoration-none color-pale-sky" href="#">Contact Us</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </footer>
+
+
             </div>
         </div>
     </div>
